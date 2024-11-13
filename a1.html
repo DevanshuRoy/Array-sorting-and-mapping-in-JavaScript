@@ -1,0 +1,51 @@
+<html>
+    <body>
+
+        <h1>Array sorting</h1><br><br>
+        <button onclick="f1()">Arrange numbers in ascending</button>
+        <br><br>
+        <button onclick="f2()">Arrange numbers in descending</button>
+        <br><br>
+        <button onclick="f3()">Arrange string in ascending</button>
+        <br><br>
+        <button onclick="f4()">Arrange string in ascending</button>
+        <br><br><br>
+
+        <p id="i1"></p>
+        <p id="i2"></p>
+
+        <script>
+
+            function f1() {
+                n=[5,9,1,0,-2,4,-16]
+                document.getElementById("i1").innerHTML="Before sorting: "+n;
+                n.sort(function(a,b){return a-b});
+                document.getElementById("i2").innerHTML="After sorting: "+n;
+            }
+
+            function f2() {
+                n=[5,9,1,0,-2,4,-16]
+                document.getElementById("i1").innerHTML="Before sorting: "+n;
+                n.sort(function(a,b){return b-a});
+                document.getElementById("i2").innerHTML="After sorting: "+n;
+            }
+
+
+            function f3() {
+                s=["Raaziya","Devanshu","Meerab","Noureen"]
+                document.getElementById("i1").innerHTML="Before sorting: "+s;
+                s.sort();
+                document.getElementById("i2").innerHTML="After sorting: "+s;
+            }
+
+            function f4() {
+                s=["Raaziya","Devanshu","Meerab","Noureen"]
+                document.getElementById("i1").innerHTML="Before sorting: "+s;
+                s.sort().reverse();
+                document.getElementById("i2").innerHTML="After sorting: "+s;
+            }
+
+        </script>
+
+    </body>
+</html>

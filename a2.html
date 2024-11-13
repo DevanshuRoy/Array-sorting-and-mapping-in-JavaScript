@@ -1,0 +1,33 @@
+<html>
+    <body>
+
+        <br><h1>Mapping</h1><br><br>
+
+        <p id="i1"></p>
+        <p id="i2"></p>
+
+        <script>
+
+            var n=[7,3,2,8];
+
+            function f1(num) {
+                return num*num;
+            }
+
+            document.getElementById("i1").innerHTML="Original Array : "+n;
+
+            var m=n.map(f1);
+            // vectorisation ---> function will apply on each element
+
+            document.getElementById("i2").innerHTML="New Array : "+m;
+
+            document.write((2+2)+"<br>");
+            document.write(("2"+"2")+"<br>");
+            document.write(("2+2")+"<br>");
+            document.write(eval("2+2")+"<br>");
+            // eval evaluates the expression in string form
+
+        </script>
+        
+    </body>
+</html>
