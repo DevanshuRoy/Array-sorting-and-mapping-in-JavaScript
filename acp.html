@@ -1,0 +1,28 @@
+<htmL>
+    <body>
+
+        <button onclick="x.map(multiply); f1(); f2();">GOOO!</button>
+
+        <script>
+            var a=2;
+
+            var x=[5,6,11,22,1,9,15,1992];
+
+            function multiply(num) {
+                prod=a*num;
+                document.write(prod+"<br>");
+            }
+
+            function f1() {
+                x.sort(function(a, b){return a-b});
+                document.write("Sorted array in ascending order: "+x+"<br><br>");
+            }
+
+            function f2() {
+                x.sort(function(a, b){return b-a});
+                document.write("Sorted array in descending order: "+x+"<br><br>");
+            }
+        </script>
+
+    </body>
+</htmL>
